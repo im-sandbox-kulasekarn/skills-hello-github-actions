@@ -4,11 +4,7 @@ on:
     types: [opened]
 jobs:
   build:
+    name: Post welcome comment
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Post welcome comment
-        run: echo "Welcome to our repository!"
 permissions:
   pull-requests: write
